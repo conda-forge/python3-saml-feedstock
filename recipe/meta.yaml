@@ -1,4 +1,4 @@
-{% set version = "1.10.1" %}
+{% set version = "1.11.0" %}
 
 package:
   name: python3-saml
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/python3-saml/python3-saml-{{ version }}.tar.gz
-  sha256: 336ef44f894b5e09cf339a67b007d8299096b7b44f43ee7426eae410771e4466
+  sha256: ec49f0216f75a379f7b3cd367d477321fa86e2a7e66801ee9e18c18fdd691ff2
 
 build:
   number: 0
