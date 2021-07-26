@@ -1,4 +1,4 @@
-{% set version = "1.9.0" %}
+{% set version = "1.10.1" %}
 
 package:
   name: python3-saml
@@ -6,22 +6,23 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/python3-saml/python3-saml-{{ version }}.tar.gz
-  sha256: 68ca2e5591769a1a87c9aac1779ff2c0852ddc89fb0b0371f50f781d354323da
+  sha256: 336ef44f894b5e09cf339a67b007d8299096b7b44f43ee7426eae410771e4466
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - isodate >=0.5.0
     - xmlsec >=0.6.0
     - defusedxml >=0.5.0
+    - lxml >=3.3.5
 
 test:
   imports:
@@ -33,7 +34,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Onelogin Python Toolkit. Add SAML support to your Python software using this library'
+  summary: Onelogin Python Toolkit. Add SAML support to your Python software using this library
 
 extra:
   recipe-maintainers:
