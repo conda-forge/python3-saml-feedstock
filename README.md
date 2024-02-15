@@ -1,11 +1,11 @@
-About python3-saml
-==================
+About python3-saml-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python3-saml-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/onelogin/python3-saml
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python3-saml-feedstock/blob/main/LICENSE.txt)
 
 Summary: Onelogin Python Toolkit. Add SAML support to your Python software using this library
 
